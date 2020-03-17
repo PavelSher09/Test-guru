@@ -1,0 +1,79 @@
+ru:
+  hello: "Привет мир"
+
+  layouts:
+    application:
+      project_name: "Гуру Тестов"
+      greeting: "Привет"
+      guru: "Гуру"
+      logout: "Выход"
+      login: "Войти"
+      register: "Регистрация"
+    admin:
+      panel: "Панель администратора"
+
+  helpers:
+    submit:
+      tests:
+        create: "Создать тест"
+        update: "Обновить тест"
+    select:
+      prompt: "Выберите из списка"
+    label:
+      tests:
+        tittle: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+  
+  tests_mailer:
+    completed_test:
+      subject: "Вы только что окончили ТестГуру тест"
+  
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружено %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+  
+  test_passages:
+    result:
+      header: " Тест %{title} завершён!"
+
+  tests:
+    index:
+      
+      name: "Название"
+      level: "Уровень"
+      category: "Категория"
+      questions_amount: "Вопросы"
+      actions: "действия"
+    
+    
+  
+  admin:
+    tests:
+      back_link: "Назад"
+      create:
+        success: "Тест был успешно создан"
+      index:
+        header: "Доступные Тесты"
+        new_test: "Создать тест"
+
+        name: "Название"
+        level: "Уровень"
+        category: "Категория"
+        questions_amount: "Вопросы"
+        actions: "действия"
+    
+      show: "Тесты"
+      tests:
+        
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+      
+
+      edit: "Редактировать"
+      delete: "Удалить"
