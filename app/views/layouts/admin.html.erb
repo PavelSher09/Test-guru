@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t('.panel') %> |<%= t('layouts.application.project_name') %></title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title><%= t('.panel') %> | <%= t('layouts.application.project_name') %></title>
     <%= csrf_meta_tags %>
-    
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= csp_meta_tag %>
+        
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
    
   </head>
 
   <body>
-    <h1><%= link_to t('layouts.application.project_name'), admin_tests_path %></h1>
+
     <%= render 'admin/nav' %>
+    <div class="container">
     <%= render 'shared/flash' %>
     <%= yield %>
     <%= render "shared/footer" %>
+    </div>
   </body>
 </html>

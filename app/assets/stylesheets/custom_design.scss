@@ -1,0 +1,13 @@
+.navbar-admin {
+    background-color: #21530a;
+}
+
+.table-dark>tbody>tr:nth-child(odd)>td,
+.table-dark>tbody>tr:nth-child(odd)>th {
+   background-color: #4931cf;
+ }
+
+ .table-dark>tbody>tr:nth-child(even)>td,
+ .table-dark>tbody>tr:nth-child(even)>th {
+    background-color: #4931cf;
+}

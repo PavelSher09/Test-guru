@@ -7,9 +7,19 @@ module ApplicationHelper
     link_to caption, "https://github.com/#{path}", target: "_blank"
   end
 
-  def show_flash_message(type)
-    css_style = { alert: 'flash alert', notice: 'flash notice'}
-    content_tag :p, flash[type], class: css_style[type]
+  def bootstrap_class_for_flash(flash_type)
+    case flash_type
+    when 'success'
+      'alert-success'
+    when 'error'
+      'alert-danger'
+    when 'alert'
+      'alert-warning'
+    when 'notice'
+      'alert-info'
+    else
+      flash_type.to_s
+    end
   end
 
 end
