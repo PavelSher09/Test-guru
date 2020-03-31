@@ -42,6 +42,9 @@ ru:
       header: " Тест %{title} завершён!"
 
   tests:
+    
+    
+
     index:
       
       name: "Название"
@@ -68,7 +71,7 @@ ru:
         actions: "действия"
     
       show: "Тесты"
-      tests:
+      test:
         
         show: "Показать"
         edit: "Редактировать"
